@@ -9,8 +9,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- `executor()` terminates the process on uncaught failures with their message and stack trace only, unless the
-  application already handles uncaught exceptions
+- `executor()` terminates the process on uncaught failures, printing their message and stack trace alone, unless the
+  application already handles uncaught exceptions, in which case its own handler decides the outcome
+
+### Changed
+
+- **Breaking**: Upgrade `@metreeca/core` to `^0.14.0` and `@metreeca/tape` to `^0.13.0`; projects using them alongside
+  this package raise their own ranges as well, so that each is shared as a single copy
 
 ### Fixed
 

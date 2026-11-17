@@ -58,8 +58,8 @@
     "check": "npx vitest --typecheck run"
   },
   "dependencies": {
-    "@metreeca/core": "^0.13.0",
-    "@metreeca/tape": "^0.12.0"
+    "@metreeca/core": "^0.14.0",
+    "@metreeca/tape": "^0.13.0"
   },
   "devDependencies": {
     "@types/node": "^25.9.3",
