@@ -7,6 +7,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/metreeca/gear/compare/v0.5.0...HEAD)
 
+### Changed
+
+- **Breaking**: `@metreeca/gear-gcp` takes `@metreeca/gear` as a peer dependency, so that an app installs a single copy
+  of it and the services the platform registers resolve within the executions the app starts; apps declare
+  `@metreeca/gear` among their own dependencies, as they already do to run the executor the services are bound to
+
 ## [0.5.0](https://github.com/metreeca/gear/compare/v0.4.0...v0.5.0) - 2026-11-17
 
 ### Added
