@@ -1,6 +1,6 @@
 {
   "name": "@metreeca/gear-gcp",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Google Cloud service implementations for @metreeca/gear.",
   "keywords": [
     "typescript",
@@ -57,12 +57,12 @@
     "google-auth-library": "^11.3.1"
   },
   "devDependencies": {
-    "@metreeca/gear": "^0.5.0",
+    "@metreeca/gear": "^0.6.0",
     "@types/node": "^25.9.3",
     "typescript": "^5.9.3",
     "vitest": "^4.0.13"
   },
   "peerDependencies": {
-    "@metreeca/gear": "^0.5.0"
+    "@metreeca/gear": "^0.6.0"
   }
 }
