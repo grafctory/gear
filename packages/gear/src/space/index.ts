@@ -23,8 +23,8 @@
  * @module
  */
 
-import type { URLLike } from "@metreeca/core";
-import { isString, memo } from "@metreeca/core";
+import type { URLLike } from "@grafctory/core";
+import { isString, memo } from "@grafctory/core";
 import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { dirname, join, sep } from "node:path";

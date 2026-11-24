@@ -3,10 +3,10 @@
     "packages/*"
   ],
   "entryPointStrategy": "packages",
-  "name": "@metreeca/gear",
+  "name": "@grafctory/gear",
   "out": "docs",
   "readme": "README.md",
-  "hostedBaseUrl": "https://metreeca.github.io/gear/",
+  "hostedBaseUrl": "https://grafctory.github.io/gear/",
   "useFirstParagraphOfCommentAsSummary": true,
   "favicon": "https://metreeca.com/assets/icon.ico",
   "sourceLinkExternal": true,
@@ -18,7 +18,7 @@
     }
   },
   "navigationLinks": {
-    "GitHub": "https://github.com/metreeca/gear"
+    "GitHub": "https://github.com/grafctory/gear"
   },
   "githubPages": false,
   "hideGenerator": true,

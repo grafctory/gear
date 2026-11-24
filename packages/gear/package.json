@@ -1,16 +1,16 @@
 {
-  "name": "@metreeca/gear",
+  "name": "@grafctory/gear",
   "version": "0.6.1",
-  "description": "Job executor and shared services for @metreeca/gear.",
+  "description": "Job executor and shared services for @grafctory/gear.",
   "keywords": [
     "typescript",
     "pipeline",
     "etl",
     "extraction"
   ],
-  "homepage": "https://metreeca.github.io/gear/",
+  "homepage": "https://grafctory.github.io/gear/",
   "bugs": {
-    "url": "https://github.com/metreeca/gear/issues",
+    "url": "https://github.com/grafctory/gear/issues",
     "email": "info@metreeca.com"
   },
   "license": "Apache-2.0",
@@ -21,26 +21,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metreeca/gear.git",
+    "url": "git+https://github.com/grafctory/gear.git",
     "directory": "packages/gear"
   },
   "type": "module",
   "sideEffects": false,
   "exports": {
     ".": {
-      "@metreeca/source": "./src/index.ts",
+      "@grafctory/source": "./src/index.ts",
       "default": "./dist/index.js"
     },
     "./space": {
-      "@metreeca/source": "./src/space/index.ts",
+      "@grafctory/source": "./src/space/index.ts",
       "default": "./dist/space/index.js"
     },
     "./vault": {
-      "@metreeca/source": "./src/vault/index.ts",
+      "@grafctory/source": "./src/vault/index.ts",
       "default": "./dist/vault/index.js"
     },
     "./cache": {
-      "@metreeca/source": "./src/cache/index.ts",
+      "@grafctory/source": "./src/cache/index.ts",
       "default": "./dist/cache/index.js"
     }
   },
@@ -58,8 +58,8 @@
     "check": "npx vitest --typecheck run"
   },
   "dependencies": {
-    "@metreeca/core": "^0.14.0",
-    "@metreeca/tape": "^0.13.0"
+    "@grafctory/core": "^0.14.0",
+    "@grafctory/tape": "^0.13.0"
   },
   "devDependencies": {
     "@types/node": "^25.9.3",

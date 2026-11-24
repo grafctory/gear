@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { lazy } from "@metreeca/core";
+import { lazy } from "@grafctory/core";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { parseEnv } from "node:util";

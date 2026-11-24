@@ -27,7 +27,7 @@
  * Ready-made caches to be {@link index.bind bound} to {@link createCache} in place of the default one.
  */
 
-import type { Bucket } from "@metreeca/core/bucket";
+import type { Bucket } from "@grafctory/core/bucket";
 import { createMemoryCache } from "./memory.js";
 
 

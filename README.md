@@ -1,8 +1,8 @@
-# @metreeca/gear
+# @grafctory/gear
 
 Job executor and shared services for data pipelines.
 
-**@metreeca/gear** runs [@metreeca/flow](https://github.com/metreeca/flow) pipelines as jobs and supplies the shared
+**@grafctory/gear** runs [@grafctory/flow](https://github.com/grafctory/flow) pipelines as jobs and supplies the shared
 services their tasks draw on. A job names the services it needs, and the executor provides them for the duration of the
 run. Ready-made tasks come from the libraries built on top of it.
 
@@ -19,28 +19,28 @@ run. Ready-made tasks come from the libraries built on top of it.
 
 # Ecosystem
 
-**@metreeca/gear** focuses on job execution and shared services. Data access, content handling and model work belong to
+**@grafctory/gear** focuses on job execution and shared services. Data access, content handling and model work belong to
 dedicated task libraries. Together they form a complete, modular toolkit for building data pipelines: every library
 runs under the same executor and draws on the same services.
 
 | Package                | Description                                                               |
 |------------------------|---------------------------------------------------------------------------|
-| **@metreeca/gear**     | Job executor and shared services for data pipelines                       |
-| [**@metreeca/pipe**][] | Ready-made tasks for retrieving and persisting data from external sources |
-| [**@metreeca/mime**][] | Ready-made tasks for parsing and serialising content by media type        |
-| [**@metreeca/llms**][] | Ready-made tasks and shared services for AI jobs                          |
+| **@grafctory/gear**     | Job executor and shared services for data pipelines                       |
+| [**@grafctory/pipe**][] | Ready-made tasks for retrieving and persisting data from external sources |
+| [**@grafctory/mime**][] | Ready-made tasks for parsing and serialising content by media type        |
+| [**@grafctory/llms**][] | Ready-made tasks and shared services for AI jobs                          |
 
-[**@metreeca/pipe**]: https://github.com/metreeca/pipe
+[**@grafctory/pipe**]: https://github.com/grafctory/pipe
 
-[**@metreeca/mime**]: https://github.com/metreeca/mime
+[**@grafctory/mime**]: https://github.com/grafctory/mime
 
-[**@metreeca/llms**]: https://github.com/metreeca/llms
+[**@grafctory/llms**]: https://github.com/grafctory/llms
 
 # Installation
 
 ```shell
-npm install @metreeca/gear              # job executor and shared services
-npm install @metreeca/gear-<platform>   # service package, one per platform
+npm install @grafctory/gear              # job executor and shared services
+npm install @grafctory/gear-<platform>   # service package, one per platform
 ```
 
 > [!WARNING]
@@ -53,31 +53,31 @@ self-contained leaves, each pulling in only the client libraries its own platfor
 
 | Package              | Description                          |
 |----------------------|--------------------------------------|
-| [@metreeca/gear]     | Job executor and shared services     |
-| [@metreeca/gear-gcp] | Google Cloud service implementations |
+| [@grafctory/gear]     | Job executor and shared services     |
+| [@grafctory/gear-gcp] | Google Cloud service implementations |
 
-[@metreeca/gear]: https://metreeca.github.io/gear/modules/_metreeca_gear.html
+[@grafctory/gear]: https://grafctory.github.io/gear/modules/_grafctory_gear.html
 
-[@metreeca/gear-gcp]: https://metreeca.github.io/gear/modules/_metreeca_gear-gcp.html
+[@grafctory/gear-gcp]: https://grafctory.github.io/gear/modules/_grafctory_gear-gcp.html
 
 # Usage
 
 > [!NOTE]
 >
 > Each package documents its own API in its README and API reference; for complete coverage, see the
-> [API reference](https://metreeca.github.io/gear/).
+> [API reference](https://grafctory.github.io/gear/).
 
-A job binds the services it relies on, then drives a [@metreeca/flow](https://github.com/metreeca/flow) feed through the
+A job binds the services it relies on, then drives a [@grafctory/flow](https://github.com/grafctory/flow) feed through the
 tasks provided by the ecosystem libraries:
 
 ```ts
-import { bind, executor, service } from "@metreeca/gear";
-import { createDotVault, createVault } from "@metreeca/gear/vault";
-import { csv } from "@metreeca/mime-csv";
-import { fetch } from "@metreeca/pipe-url";
-import { pipe } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { each } from "@metreeca/flow/sinks";
+import { bind, executor, service } from "@grafctory/gear";
+import { createDotVault, createVault } from "@grafctory/gear/vault";
+import { csv } from "@grafctory/mime-csv";
+import { fetch } from "@grafctory/pipe-url";
+import { pipe } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { each } from "@grafctory/flow/sinks";
 
 await executor(
 	bind(createVault, createDotVault)
@@ -90,10 +90,10 @@ await executor(
 
 # Support
 
-- open an [issue](https://github.com/metreeca/gear/issues) to report a problem or to suggest a new feature
-- start a [discussion](https://github.com/metreeca/gear/discussions) to ask a how-to question or to share an idea
+- open an [issue](https://github.com/grafctory/gear/issues) to report a problem or to suggest a new feature
+- start a [discussion](https://github.com/grafctory/gear/discussions) to ask a how-to question or to share an idea
 
 # License
 
 This project is licensed under the Apache 2.0 License –
-see [LICENSE](https://github.com/metreeca/gear?tab=Apache-2.0-1-ov-file) file for details.
+see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.

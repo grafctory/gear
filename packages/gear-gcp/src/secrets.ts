@@ -36,8 +36,8 @@
  */
 
 import { SecretManagerServiceClient } from "@google-cloud/secret-manager";
-import { error, isError } from "@metreeca/core";
-import { Vault } from "@metreeca/gear/vault";
+import { error, isError } from "@grafctory/core";
+import { Vault } from "@grafctory/gear/vault";
 
 
 /**

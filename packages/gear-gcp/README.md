@@ -1,14 +1,14 @@
-# @metreeca/gear-gcp
+# @grafctory/gear-gcp
 
-[![npm](https://img.shields.io/npm/v/@metreeca/gear-gcp)](https://www.npmjs.com/package/@metreeca/gear-gcp)
+[![npm](https://img.shields.io/npm/v/@grafctory/gear-gcp)](https://www.npmjs.com/package/@grafctory/gear-gcp)
 
-Google Cloud service implementations for [@metreeca/gear](https://github.com/metreeca/gear).
+Google Cloud service implementations for [@grafctory/gear](https://github.com/grafctory/gear).
 
 # Installation
 
 ```shell
-npm install @metreeca/gear      # the job executor
-npm install @metreeca/gear-gcp  # this package
+npm install @grafctory/gear      # the job executor
+npm install @grafctory/gear-gcp  # this package
 ```
 
 > [!IMPORTANT]
@@ -22,10 +22,10 @@ npm install @metreeca/gear-gcp  # this package
 
 # Support
 
-- open an [issue](https://github.com/metreeca/gear/issues) to report a problem or to suggest a new feature
-- start a [discussion](https://github.com/metreeca/gear/discussions) to ask a how-to question or to share an idea
+- open an [issue](https://github.com/grafctory/gear/issues) to report a problem or to suggest a new feature
+- start a [discussion](https://github.com/grafctory/gear/discussions) to ask a how-to question or to share an idea
 
 # License
 
 This project is licensed under the Apache 2.0 License –
-see [LICENSE](https://github.com/metreeca/gear?tab=Apache-2.0-1-ov-file) file for details.
+see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.

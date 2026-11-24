@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import type { Bucket } from "@metreeca/core/bucket";
-import { immutable } from "@metreeca/core/values";
+import type { Bucket } from "@grafctory/core/bucket";
+import { immutable } from "@grafctory/core/values";
 import { createHash, randomUUID } from "node:crypto";
 import { openAsBlob, type Stats } from "node:fs";
 import { mkdir, readdir, rename, rm, stat, utimes, writeFile } from "node:fs/promises";

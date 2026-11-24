@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Defined } from "@metreeca/core";
+import type { Defined } from "@grafctory/core";
 import { describe, expectTypeOf, it } from "vitest";
 import type { Binding } from "./index.js";
 import { bind, executor, service } from "./index.js";

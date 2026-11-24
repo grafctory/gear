@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { type Bucket, createMemoryBucket } from "@metreeca/core/bucket";
+import { type Bucket, createMemoryBucket } from "@grafctory/core/bucket";
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

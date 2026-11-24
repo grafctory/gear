@@ -47,10 +47,10 @@
  * ```
  */
 
-import type { Defined } from "@metreeca/core";
-import { unique } from "@metreeca/core/arrays";
-import type { Awaitable } from "@metreeca/core/async";
-import { report } from "@metreeca/tape";
+import type { Defined } from "@grafctory/core";
+import { unique } from "@grafctory/core/arrays";
+import type { Awaitable } from "@grafctory/core/async";
+import { report } from "@grafctory/tape";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { isAsyncDisposable, isDisposable, terminate } from "./index.core.js";
 

@@ -1,8 +1,8 @@
-# @metreeca/gear
+# @grafctory/gear
 
-[![npm](https://img.shields.io/npm/v/@metreeca/gear)](https://www.npmjs.com/package/@metreeca/gear)
+[![npm](https://img.shields.io/npm/v/@grafctory/gear)](https://www.npmjs.com/package/@grafctory/gear)
 
-Job executor and shared services for [@metreeca/gear](https://github.com/metreeca/gear).
+Job executor and shared services for [@grafctory/gear](https://github.com/grafctory/gear).
 
 A consumer sets up an executor, binding the services a job relies on to the implementations chosen for the run. The
 executor runs the job, whose tasks resolve each service through a locator, naming it by its default factory rather than
@@ -18,7 +18,7 @@ runs share nothing.
 # Installation
 
 ```shell
-npm install @metreeca/gear
+npm install @grafctory/gear
 ```
 
 > [!IMPORTANT]
@@ -34,25 +34,25 @@ npm install @metreeca/gear
 
 | Module                        | Description                      |
 |-------------------------------|----------------------------------|
-| [@metreeca/gear][gear]        | Job executor and service locator |
-| [@metreeca/gear/space][space] | Working space access             |
-| [@metreeca/gear/vault][vault] | Sensitive parameter lookup       |
-| [@metreeca/gear/cache][cache] | Bulk content caching             |
+| [@grafctory/gear][gear]        | Job executor and service locator |
+| [@grafctory/gear/space][space] | Working space access             |
+| [@grafctory/gear/vault][vault] | Sensitive parameter lookup       |
+| [@grafctory/gear/cache][cache] | Bulk content caching             |
 
-[gear]: https://metreeca.github.io/gear/modules/_metreeca_gear.index.html
+[gear]: https://grafctory.github.io/gear/modules/_grafctory_gear.index.html
 
-[space]: https://metreeca.github.io/gear/modules/_metreeca_gear.space.html
+[space]: https://grafctory.github.io/gear/modules/_grafctory_gear.space.html
 
-[vault]: https://metreeca.github.io/gear/modules/_metreeca_gear.vault.html
+[vault]: https://grafctory.github.io/gear/modules/_grafctory_gear.vault.html
 
-[cache]: https://metreeca.github.io/gear/modules/_metreeca_gear.cache.html
+[cache]: https://grafctory.github.io/gear/modules/_grafctory_gear.cache.html
 
 # Support
 
-- open an [issue](https://github.com/metreeca/gear/issues) to report a problem or to suggest a new feature
-- start a [discussion](https://github.com/metreeca/gear/discussions) to ask a how-to question or to share an idea
+- open an [issue](https://github.com/grafctory/gear/issues) to report a problem or to suggest a new feature
+- start a [discussion](https://github.com/grafctory/gear/discussions) to ask a how-to question or to share an idea
 
 # License
 
 This project is licensed under the Apache 2.0 License –
-see [LICENSE](https://github.com/metreeca/gear?tab=Apache-2.0-1-ov-file) file for details.
+see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.

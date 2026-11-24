@@ -27,7 +27,7 @@
  * Ready-made vaults to be {@link index.bind bound} to {@link createVault} in place of the default one.
  */
 
-import { Awaitable } from "@metreeca/core/async";
+import { Awaitable } from "@grafctory/core/async";
 import { createEnvVault } from "./env.js";
 
 
