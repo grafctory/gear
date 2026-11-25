@@ -10,13 +10,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/grafctory/gear/compare/v0.6.1...HEAD)
 
-## [0.6.1](https://github.com/metreeca/gear/compare/v0.6.0...v0.6.1) - 2026-11-24
+## [0.6.1](https://github.com/grafctory/gear/compare/v0.6.0...v0.6.1) - 2026-11-24
 
 ### Changed
 
 - Maintenance release with no change to the published API or behaviour
 
-## [0.6.0](https://github.com/metreeca/gear/compare/v0.5.0...v0.6.0) - 2026-11-19
+## [0.6.0](https://github.com/grafctory/gear/compare/v0.5.0...v0.6.0) - 2026-11-19
 
 ### Changed
 
@@ -24,7 +24,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   of it and the services the platform registers resolve within the executions the app starts; apps declare
   `@metreeca/gear` among their own dependencies, as they already do to run the executor the services are bound to
 
-## [0.5.0](https://github.com/metreeca/gear/compare/v0.4.0...v0.5.0) - 2026-11-17
+## [0.5.0](https://github.com/grafctory/gear/compare/v0.4.0...v0.5.0) - 2026-11-17
 
 ### Added
 
@@ -40,7 +40,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `@metreeca/gear-gcp/secrets` access failures quote the cause message alone, without its error name prefix
 
-## [0.4.0](https://github.com/metreeca/gear/compare/v0.3.1...v0.4.0) - 2026-10-19
+## [0.4.0](https://github.com/grafctory/gear/compare/v0.3.1...v0.4.0) - 2026-10-19
 
 ### Added
 
@@ -53,14 +53,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Upgrade `@metreeca/core` to `^0.13.0`
 - Upgrade `@metreeca/tape` to `^0.12.0`
 
-## [0.3.1](https://github.com/metreeca/gear/compare/v0.3.0...v0.3.1) - 2026-10-14
+## [0.3.1](https://github.com/grafctory/gear/compare/v0.3.0...v0.3.1) - 2026-10-14
 
 ### Changed
 
 - Upgrade `@metreeca/core` to `^0.12.1`
 - Upgrade `@metreeca/tape` to `^0.11.1`
 
-## [0.3.0](https://github.com/metreeca/gear/compare/v0.2.0...v0.3.0) - 2026-10-01
+## [0.3.0](https://github.com/grafctory/gear/compare/v0.2.0...v0.3.0) - 2026-10-01
 
 ### Added
 
@@ -72,14 +72,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Removed
 
-- `@metreeca/gear-url` migrated to [@metreeca/pipe](https://github.com/metreeca/pipe) as `@metreeca/pipe-url`, which
+- `@metreeca/gear-url` migrated to [@metreeca/pipe](https://github.com/grafctory/pipe) as `@metreeca/pipe-url`, which
   no longer exports `URLLike`: the seed and link type `crawl` takes is the one `@metreeca/core` exports, which a
   consumer naming the type imports from there
 - `@metreeca/gear-csv`, `@metreeca/gear-json` and `@metreeca/gear-xml` migrated to
-  [@metreeca/mime](https://github.com/metreeca/mime) as `@metreeca/mime-csv`, `@metreeca/mime-json` and
+  [@metreeca/mime](https://github.com/grafctory/mime) as `@metreeca/mime-csv`, `@metreeca/mime-json` and
   `@metreeca/mime-xml`
 
-## [0.2.0](https://github.com/metreeca/gear/compare/v0.1.1...v0.2.0) - 2026-09-09
+## [0.2.0](https://github.com/grafctory/gear/compare/v0.1.1...v0.2.0) - 2026-09-09
 
 ### Added
 
@@ -131,7 +131,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `@metreeca/gear-xml` keeps the XPath namespace declarations in the compiled expression, so that a prefixed
   expression addresses the tree it was written against
 
-## [0.1.1](https://github.com/metreeca/gear/compare/v0.1.0...v0.1.1) - 2026-08-28
+## [0.1.1](https://github.com/grafctory/gear/compare/v0.1.0...v0.1.1) - 2026-08-28
 
 ### Fixed
 
@@ -139,7 +139,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   are now collected into an `AggregateError`, in the order they were raised, rather than into `SuppressedError`s, which
   that runtime does not provide
 
-## [0.1.0](https://github.com/metreeca/gear/releases/tag/v0.1.0) - 2026-08-28
+## [0.1.0](https://github.com/grafctory/gear/releases/tag/v0.1.0) - 2026-08-28
 
 Initial release of the ETL job framework: ready-made tasks for retrieving remote or local sources and parsing the usual
 interchange formats, plus the job executor those tasks draw their shared services from. Task packages are self-contained
