@@ -1,8 +1,15 @@
 # @grafctory/gear-gcp
 
-[![npm](https://img.shields.io/npm/v/@grafctory/gear-gcp)](https://www.npmjs.com/package/@grafctory/gear-gcp)
+[![npm][npm-badge]][npm] [![Grafctory][grafctory-badge]][grafctory]
 
-Google Cloud service implementations for [@grafctory/gear](https://github.com/grafctory/gear).
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/gear-gcp
+[npm]: https://www.npmjs.com/package/@grafctory/gear-gcp
+[grafctory-badge]: https://img.shields.io/badge/part%20of-Grafctory-blue
+[grafctory]: https://github.com/grafctory
+
+Google Cloud service implementations for [@grafctory/gear].
+
+[@grafctory/gear]: https://github.com/grafctory/gear
 
 # Installation
 
@@ -29,3 +36,5 @@ npm install @grafctory/gear-gcp  # this package
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>

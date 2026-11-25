@@ -1,8 +1,13 @@
 # @grafctory/gear
 
-[![npm](https://img.shields.io/npm/v/@grafctory/gear)](https://www.npmjs.com/package/@grafctory/gear)
+[![npm][npm-badge]][npm] [![Grafctory][grafctory-badge]][grafctory]
 
-Job executor and shared services for [@grafctory/gear](https://github.com/grafctory/gear).
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/gear
+[npm]: https://www.npmjs.com/package/@grafctory/gear
+[grafctory-badge]: https://img.shields.io/badge/part%20of-Grafctory-blue
+[grafctory]: https://github.com/grafctory
+
+Job executor and shared services for [@grafctory/gear].
 
 A consumer sets up an executor, binding the services a job relies on to the implementations chosen for the run. The
 executor runs the job, whose tasks resolve each service through a locator, naming it by its default factory rather than
@@ -14,6 +19,8 @@ against stubs, or against any custom service honouring the same contracts.
 Bound implementations are constructed as the execution opens, unbound defaults on first use; either way the instance is
 shared across the job and, where it implements a disposal protocol, disposed as the job ends, so concurrent or repeated
 runs share nothing.
+
+[@grafctory/gear]: https://github.com/grafctory/gear
 
 # Installation
 
@@ -56,3 +63,5 @@ npm install @grafctory/gear
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>

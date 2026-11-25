@@ -2,9 +2,10 @@
 
 Job executor and shared services for data pipelines.
 
-**@grafctory/gear** runs [@grafctory/flow](https://github.com/grafctory/flow) pipelines as jobs and supplies the shared
-services their tasks draw on. A job names the services it needs, and the executor provides them for the duration of the
-run. Ready-made tasks come from the libraries built on top of it.
+**@grafctory/gear** is the job execution module of the [Grafctory][grafctory] model-driven knowledge graph framework. It
+runs [@grafctory/flow] pipelines as jobs and supplies the shared services their tasks draw on. A job names the services
+it needs, and the executor provides them for the duration of the run. Ready-made tasks come from the libraries built on
+top of it.
 
 - **Job Executor**: a pipeline run as a job, with every service it uses scoped to that run
 - **Shared Services**: the working space, secrets and caches a run needs, built for the run and released as it ends
@@ -16,6 +17,9 @@ run. Ready-made tasks come from the libraries built on top of it.
 >
 > Pipelines are server-side workloads targeting [Node.js](https://nodejs.org/) 22 or later, relying on facilities such
 > as the filesystem, the process environment and `fetch`. The packages are not intended for the browser.
+
+[@grafctory/flow]: https://github.com/grafctory/flow
+[grafctory]: https://github.com/grafctory
 
 # Ecosystem
 
@@ -67,8 +71,8 @@ self-contained leaves, each pulling in only the client libraries its own platfor
 > Each package documents its own API in its README and API reference; for complete coverage, see the
 > [API reference](https://grafctory.github.io/gear/).
 
-A job binds the services it relies on, then drives a [@grafctory/flow](https://github.com/grafctory/flow) feed through the
-tasks provided by the ecosystem libraries:
+A job binds the services it relies on, then drives a [@grafctory/flow] feed through the tasks provided by the ecosystem
+libraries:
 
 ```ts
 import { bind, executor, service } from "@grafctory/gear";
@@ -97,3 +101,5 @@ await executor(
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/gear?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>
