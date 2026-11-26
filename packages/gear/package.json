@@ -1,6 +1,6 @@
 {
   "name": "@grafctory/gear",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Job executor and shared services for @grafctory/gear.",
   "keywords": [
     "typescript",
